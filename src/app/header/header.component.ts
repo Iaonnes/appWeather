@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit , EventEmitter, Output} from '@angular/core';
+import { WeatherService } from '../weather.service';
+
 
 @Component({
   selector: 'app-header',
@@ -7,9 +9,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
+
+
   constructor() { }
 
   ngOnInit() {
+
+
+
   }
 
 }

@@ -8,6 +8,8 @@ import { HeaderComponent } from './header/header.component';
 import { CurrentComponent } from './current/current.component';
 import { ForecastComponent } from './forecast/forecast.component';
 import { weatherRouting } from './weather.routing';
+import { WeatherService } from './weather.service';
+
 
 @NgModule({
   declarations: [
@@ -17,15 +19,17 @@ import { weatherRouting } from './weather.routing';
     CurrentComponent,
     ForecastComponent,
 
+
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
     weatherRouting
+    
 
   ],
-  providers: [],
+  providers: [WeatherService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
